@@ -10,7 +10,7 @@ var Twitter = new twit(config);
 var retweet = function() {
     var params = {
         q: '#Linkinpark',  // REQUIRED
-        result_type: 'recent',
+        result_type: 'mixed',
         lang: 'en'
     }
     Twitter.get('search/tweets', params, function(err, data) {
@@ -49,7 +49,7 @@ setInterval(retweet, 120000);
 var favoriteTweet = function(){
   var params = {
       q: '#nodejs, #Nodejs',  // REQUIRED
-      result_type: 'recent',
+      result_type: 'mixed',
       lang: 'en'
   }
   // find the tweet
