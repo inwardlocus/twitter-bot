@@ -39,11 +39,19 @@ var retweet = function(q) {
 }
 
 // grab & retweet as soon as program is running...
-retweet('#quote');
-retweet('#camus');retweet('#lyrics');
-retweet('#philosophy');
+var quote = function(){retweet('#quote');setInterval(retweet, 3000000);}
+var camus = function(){retweet('#camus');setInterval(retweet, 9000000);}
+var lyrics = function(){retweet('#lyrics');setInterval(retweet, 4500000);}
+var philosophy = function(){retweet('#philosophy');;setInterval(retweet, 8000000);}
+
+quote();
+camus();
+lyrics();
+philosophy();
+
+
 // retweet in every 50 minutes
-setInterval(retweet, 1800000);
+
 
 // FAVORITE BOT====================
 
