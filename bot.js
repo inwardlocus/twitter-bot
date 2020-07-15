@@ -10,7 +10,7 @@ var Twitter = new twit(config);
 var retweet = function() {
     var params = {
         q: '#Linkinpark',  // REQUIRED
-        result_type: 'popular',
+        result_type: 'recent',
         lang: 'en'
     }
     Twitter.get('search/tweets', params, function(err, data) {
