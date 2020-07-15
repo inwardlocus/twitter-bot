@@ -9,7 +9,7 @@ var Twitter = new twit(config);
 // find latest tweet according the query 'q' in params
 var retweet = function() {
     var params = {
-        q: '#Lyrics ',  // REQUIRED
+        q: '#Linkinpark',  // REQUIRED
         result_type: 'popular',
         lang: 'en'
     }
