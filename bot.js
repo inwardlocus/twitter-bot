@@ -40,7 +40,7 @@ var retweet = function(q) {
 
 // grab & retweet as soon as program is running...
 retweet('#quote');
-retweet('#influencer');retweet('#lyrics');
+retweet('#camus');retweet('#lyrics');
 retweet('#philosophy');
 // retweet in every 50 minutes
 setInterval(retweet, 1800000);
