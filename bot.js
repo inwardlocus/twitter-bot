@@ -48,7 +48,7 @@ setInterval(retweet, 1800000);
 // find a random tweet and 'favorite' it
 var favoriteTweet = function(){
   var params = {
-      q: '#nodejs, #Nodejs',  // REQUIRED
+      q: '#coldplay',  // REQUIRED
       result_type: 'mixed',
       lang: 'en'
   }
