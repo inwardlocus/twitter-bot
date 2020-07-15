@@ -7,9 +7,9 @@ var Twitter = new twit(config);
 // RETWEET BOT ==========================
 
 // find latest tweet according the query 'q' in params
-var retweet = function() {
+var retweet = function(q) {
     var params = {
-        q: '#Linkinpark',  // REQUIRED
+        q: q,  // REQUIRED
         result_type: 'mixed',
         lang: 'en'
     }
@@ -39,16 +39,18 @@ var retweet = function() {
 }
 
 // grab & retweet as soon as program is running...
-retweet();
+retweet('#quote');
+retweet('#influencer');retweet('#lyrics');
+retweet('#philosophy');
 // retweet in every 50 minutes
 setInterval(retweet, 1800000);
 
 // FAVORITE BOT====================
 
 // find a random tweet and 'favorite' it
-var favoriteTweet = function(){
+var favoriteTweet = function(q){
   var params = {
-      q: '#coldplay',  // REQUIRED
+      q: q,  // REQUIRED
       result_type: 'mixed',
       lang: 'en'
   }
@@ -75,7 +77,9 @@ var favoriteTweet = function(){
   });
 }
 // grab & 'favorite' as soon as program is running...
-favoriteTweet();
+favoriteTweet('#lyrics');
+favoriteTweet('#coldplay');
+favoriteTweet('#poetry');
 // 'favorite' a tweet in every 60 minutes
 setInterval(favoriteTweet, 3000000);
 
