@@ -10,7 +10,7 @@ var Twitter = new twit(config);
 var retweet = function(q) {
     var params = {
         q: q,  // REQUIRED
-        result_type: 'mixed',
+        result_type: 'popular',
         lang: 'en'
     }
     Twitter.get('search/tweets', params, function(err, data) {
@@ -39,13 +39,11 @@ var retweet = function(q) {
 }
 
 // grab & retweet as soon as program is running...
-var quote = function(){retweet('#quote');setInterval(retweet, 3000000);}
-var camus = function(){retweet('#camus');setInterval(retweet, 9000000);}
-var lyrics = function(){retweet('#lyrics');setInterval(retweet, 4500000);}
-var philosophy = function(){retweet('#philosophy');;setInterval(retweet, 8000000);}
+var quote = function(){retweet('#quote');setInterval(retweet, 43200000);}
+var lyrics = function(){retweet('#lyrics');setInterval(retweet, 72000000);}
+var philosophy = function(){retweet('#philosophy');;setInterval(retweet, 86400000);}
 
 quote();
-camus();
 lyrics();
 philosophy();
 
@@ -85,11 +83,15 @@ var favoriteTweet = function(q){
   });
 }
 // grab & 'favorite' as soon as program is running...
-favoriteTweet('#lyrics');
-favoriteTweet('#coldplay');
-favoriteTweet('#poetry');
-// 'favorite' a tweet in every 60 minutes
-setInterval(favoriteTweet, 3000000);
+
+var favlyrics = function(){favoriteTweet('#lyrics');setInterval(retweet, 43200000);}
+var favpoetry = function(){favoriteTweet('#poetry');setInterval(retweet, 72000000);}
+
+favlyrics();
+favpoetry();
+
+
+
 
 // function to generate a random tweet tweet
 function ranDom (arr) {
