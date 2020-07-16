@@ -85,7 +85,7 @@ var favoriteTweet = function(q){
 // grab & 'favorite' as soon as program is running...
 
 var favlyrics = function(){favoriteTweet('#lyrics');setInterval(retweet, 43200000);}
-var favpoetry = function(){favoriteTweet('#poetry');setInterval(retweet, 72000000);}
+var favquoteoftheday = function(){favoriteTweet('#quoteoftheday');setInterval(retweet, 72000000);}
 
 favlyrics();
 favpoetry();
