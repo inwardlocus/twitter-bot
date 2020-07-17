@@ -88,7 +88,7 @@ var favlyrics = function(){favoriteTweet('#lyrics');setInterval(retweet, 4320000
 var favquoteoftheday = function(){favoriteTweet('#quoteoftheday');setInterval(retweet, 72000000);}
 
 favlyrics();
-favlyrics();
+favquoteoftheday();
 
 
 
