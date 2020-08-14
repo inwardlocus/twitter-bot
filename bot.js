@@ -39,13 +39,13 @@ var retweet = function(q) {
 }
 
 // grab & retweet as soon as program is running...
-var quote = function(){retweet('#quote');setInterval(retweet, 43200000);}
-var lyrics = function(){retweet('#lyrics');setInterval(retweet, 72000000);}
-var philosophy = function(){retweet('#philosophy');;setInterval(retweet, 86400000);}
+var LyricsQuote = function(){retweet('#LyricsQuote');setInterval(retweet, 45200000);}
+var LinkinPark = function(){retweet('#LinkinPark');setInterval(retweet, 72500000);}
+var AlbertCamus = function(){retweet('#AlbertCamus');;setInterval(retweet, 86400000);}
 
-quote();
-lyrics();
-philosophy();
+LyricsQuote();
+LinkinPark();
+AlbertCamus();
 
 
 // retweet in every 50 minutes
@@ -84,8 +84,8 @@ var favoriteTweet = function(q){
 }
 // grab & 'favorite' as soon as program is running...
 
-var favlyrics = function(){favoriteTweet('#lyrics');setInterval(retweet, 43200000);}
-var favquoteoftheday = function(){favoriteTweet('#quoteoftheday');setInterval(retweet, 72000000);}
+var favlyrics = function(){favoriteTweet('#LinkinPark');setInterval(retweet, 42200000);}
+var favquoteoftheday = function(){favoriteTweet('#NodeJS');setInterval(retweet, 71000000);}
 
 favlyrics();
 favquoteoftheday();
