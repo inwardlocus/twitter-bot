@@ -42,10 +42,12 @@ var retweet = function(q) {
 var LyricsQuote = function(){retweet('#LyricsQuote');setInterval(retweet, 45200000);}
 var LinkinPark = function(){retweet('#LinkinPark');setInterval(retweet, 72500000);}
 var AlbertCamus = function(){retweet('#AlbertCamus');;setInterval(retweet, 86400000);}
+var Minimalism = function(){retweet('#Minimalism');;setInterval(retweet, 66400000);}
 
 LyricsQuote();
 LinkinPark();
 AlbertCamus();
+Minimalism();
 
 
 // retweet in every 50 minutes
